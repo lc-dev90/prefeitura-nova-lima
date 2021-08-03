@@ -277,7 +277,7 @@ ul {
 .header__banner img {
   object-fit: cover;
   object-position: center center;
-  width: 1770px;
+  width: 100vw;
   height: 500px;
 }
 
@@ -441,10 +441,11 @@ ul {
 
 .main__section--box {
   position: relative;
+  width: 33.4%;
 }
 
 .main__section--box div {
-  max-width: calc(1770px / 3);
+  width: 100%;
   height: 268px;
   overflow: hidden;
 }
