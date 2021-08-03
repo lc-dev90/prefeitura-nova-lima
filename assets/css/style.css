@@ -95,6 +95,7 @@ ul {
   display: flex;
   padding: 1.5rem 0;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__main--logo {
@@ -199,4 +200,47 @@ ul {
 .header__main--social ul li:nth-of-type(4) a i {
   font-size: 1.4rem;
   color: #b735cf;
+}
+
+.navbar {
+  background: #853a3e;
+}
+
+.navbar .container {
+  display: flex;
+  padding: 1.6rem 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar .container li {
+  position: relative;
+  transition: all 250ms ease-in-out;
+}
+.navbar .container li:hover {
+  transform: translateY(3px);
+}
+/* .navbar .container li:hover::after {
+  width: 100%;
+  transform-origin: center;
+  opacity: 1;
+} */
+
+/* .navbar .container li::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  opacity: 0;
+  width: 1px;
+  background: white;
+  bottom: -5px;
+  left: 0%;
+  transition: all 350ms ease;
+} */
+
+.navbar .container li a {
+  color: #f8f8f8;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
 }
