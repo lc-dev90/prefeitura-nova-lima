@@ -22,6 +22,7 @@ ul {
 .container {
   width: 1170px;
   margin: 0 auto;
+  max-width: 95%;
 }
 
 .header {
@@ -33,6 +34,7 @@ ul {
 
 .header__acessibility .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-family: "Mulish", sans-serif;
   padding: 0.7rem 0;
@@ -87,4 +89,114 @@ ul {
 .header__accessibility--menu2 ul li a span {
   font-size: 15px;
   font-weight: 700;
+}
+
+.header__main .container {
+  display: flex;
+  padding: 1.5rem 0;
+  align-items: center;
+}
+
+.header__main--logo {
+  width: 159px;
+  height: 95px;
+  margin-right: 1rem;
+}
+
+.header__main--logo img {
+  width: 100%;
+}
+
+.header__main--title {
+  color: #717171;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.header__main--title span {
+  font-size: 31px;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  font-weight: 800;
+}
+.header__main--form {
+  position: relative;
+}
+
+.header__main--form label input {
+  border: 3px solid #71717136;
+  border-radius: 5px;
+  padding: 0.4rem 1.2rem;
+  padding-right: 2.5rem;
+  width: 300px;
+  font-size: 18px;
+}
+.header__main--form label input::placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header__main--form label button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  border: none;
+  padding: 0.3rem 0.55rem;
+  background: #e4b524;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  height: 87%;
+}
+
+.header__main--form label button i {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.header__main--date {
+  margin: 0 1.5rem;
+  margin-left: 2.5rem;
+}
+
+.header__main--date p {
+  color: #838383;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__main--social ul {
+  display: flex;
+}
+
+.header__main--social ul li {
+  padding: 0.4rem;
+  transition: transform 250ms ease-in-out;
+}
+
+.header__main--social ul li:hover {
+  transform: translateY(-3px);
+}
+
+.header__main--social ul li a i {
+  font-size: 1.2rem;
+}
+
+.header__main--social ul li:nth-of-type(1) a i {
+  color: #445fe2;
+}
+
+.header__main--social ul li:nth-of-type(2) a i {
+  color: #64c1e4;
+}
+
+.header__main--social ul li:nth-of-type(3) a i {
+  color: #a31d1d;
+}
+
+.header__main--social ul li:nth-of-type(4) a i {
+  font-size: 1.4rem;
+  color: #b735cf;
 }

@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -54,43 +60,51 @@
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <img src="logo" alt="logo" />
-        </div>
-        <h4>Prefeitura Municipal de <span>Nova Lima</span></h4>
-        <form>
-          <label>
-            <input type="text" placeholder="Pesquise no site" />
-          </label>
-          <button><i class="fas fa-search"></i></button>
-        </form>
-        <div>
-          <p><span>2</span> de <span>janeiro</span> de <span>1990</span></p>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="http://www.facebook.com" target="_blank" norefferer
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-            </li>
-            <li>
-              <a href="http://www.twitter.com" target="_blank" norefferer
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a href="http://www.google.com" target="_blank" norefferer
-                ><i class="fab fa-google"></i
-              ></a>
-            </li>
-            <li>
-              <a href="http://www.instagram.com" target="_blank" norefferer
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-          </ul>
+      <div class="header__main">
+        <div class="container">
+          <div class="header__main--logo">
+            <img src="./assets/img/logo_header.png" alt="logo" />
+          </div>
+          <h4 class="header__main--title">
+            Prefeitura Municipal de <span>Nova Lima</span>
+          </h4>
+          <form class="header__main--form">
+            <label for="search-input">
+              <input
+                id="search-input"
+                type="text"
+                placeholder="Pesquise no site"
+              />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </label>
+          </form>
+          <div class="header__main--date">
+            <p><span>2</span> de <span>março</span> de <span>2021</span></p>
+          </div>
+          <div class="header__main--social">
+            <ul>
+              <li>
+                <a href="http://www.facebook.com" target="_blank" norefferer
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://www.twitter.com" target="_blank" norefferer
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://www.google.com" target="_blank" norefferer
+                  ><i class="fab fa-google"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://www.instagram.com" target="_blank" norefferer
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav>
