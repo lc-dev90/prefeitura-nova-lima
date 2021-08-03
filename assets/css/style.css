@@ -259,3 +259,67 @@ ul {
   width: 100vw;
   height: 500px;
 }
+
+main {
+  padding-top: 5rem;
+}
+
+.main__section--title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #4a4a4a;
+  font-size: 35px;
+  position: relative;
+  text-align: center;
+  padding: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.main__section--title::after {
+  content: "";
+  position: absolute;
+  background: #ae1d1d;
+  height: 2px;
+  width: 81px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__section--services {
+  padding-top: 3rem;
+  display: grid;
+  gap: 1.1rem;
+  column-gap: 1.5rem;
+  /*  grid-template-columns: repeat(4, minmax(276px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(274px, 1fr));
+}
+
+.main__section--button {
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #941c1c;
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.main__section--button.darker {
+  background: #602e2e;
+}
+
+.main__section--button div:nth-of-type(1) {
+  margin-right: 1rem;
+}
+
+.main__section--button span {
+  font-family: "Monda", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  width: 50%;
+  text-align: left;
+}
