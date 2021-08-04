@@ -34,8 +34,13 @@ ul {
   font-size: 18px;
   color: #ae1d1d;
   cursor: pointer;
+  transition: all 250ms ease-in-out;
 }
 
+.btn-secondary:hover {
+  color: white;
+  background: #ae1d1d;
+}
 .btn-primary {
   border: 2px solid transparent;
   color: white;
@@ -47,6 +52,13 @@ ul {
   margin: 0 auto;
   display: block;
   cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-primary:hover {
+  background: white;
+  color: #ae1d1d;
+  border-color: #ae1d1d;
 }
 
 .header__acessibility {
@@ -238,27 +250,27 @@ ul {
   position: relative;
   transition: all 250ms ease-in-out;
 }
-.header__navbar .container li:hover {
-  transform: translateY(3px);
-}
+/* .header__navbar .container li:hover {
+  transform: translateY(-3px);
+} */
 
-/* .navbar .container li:hover::after {
+.header__navbar .container li:hover::after {
   width: 100%;
   transform-origin: center;
   opacity: 1;
-} */
+}
 
-/* .navbar .container li::after {
+.header__navbar .container li::after {
   content: "";
   position: absolute;
   height: 1px;
   opacity: 0;
   width: 1px;
   background: white;
-  bottom: -5px;
+  bottom: -2px;
   left: 0%;
   transition: all 350ms ease;
-} */
+}
 
 .header__navbar .container li a {
   color: #f8f8f8;
@@ -363,6 +375,19 @@ ul {
 .main__section--card {
   width: 355px;
   height: 445px;
+  transition: all 250ms ease-in-out;
+}
+
+.main__section--card:hover {
+  transform: translateY(-2px);
+}
+
+.main__section--card:hover div button {
+  transform: translateY(2px);
+}
+
+.main__section--card:hover div:nth-of-type(2) {
+  box-shadow: 1px 1px 20px 6px #c1c1c1bd;
 }
 
 .main__section--card div:nth-of-type(1) {
@@ -478,10 +503,20 @@ ul {
   padding: 0.9rem 3.3rem;
 }
 
+.btn-primary.btn-green:hover {
+  border-color: white;
+  color: white;
+}
+
 .btn-primary.btn-yellow {
   background: #c97e1f;
   font-family: "Open Sans", sans-serif;
   padding: 0.9rem 3.3rem;
+}
+
+.btn-primary.btn-yellow:hover {
+  border-color: white;
+  color: white;
 }
 
 .btn-primary.btn-brown {
@@ -489,6 +524,12 @@ ul {
   font-family: "Open Sans", sans-serif;
   padding: 0.9rem 3.3rem;
 }
+
+.btn-primary.btn-brown:hover {
+  border-color: white;
+  color: white;
+}
+
 .main__section {
   position: relative;
   overflow: hidden;
@@ -561,6 +602,20 @@ ul {
 .main__section--social ul li a i {
   font-size: 1.8rem;
   color: white;
+  transition: all 250ms ease-in-out;
+}
+
+.main__section--social ul li:nth-of-type(1):hover a i {
+  color: #445fe2;
+}
+.main__section--social ul li:nth-of-type(2):hover a i {
+  color: #64c1e4;
+}
+.main__section--social ul li:nth-of-type(3):hover a i {
+  color: #a31d1d;
+}
+.main__section--social ul li:nth-of-type(4):hover a i {
+  color: #b735cf;
 }
 
 .main__section--social ul li:nth-of-type(4) a i {
@@ -573,6 +628,11 @@ ul {
   padding: 0.9rem 3.5rem;
 }
 
+.btn-primary.btn-gallery:hover {
+  background: white;
+  color: #925053;
+}
+
 .main__section--title.text-white {
   color: white;
   margin-bottom: 4rem;
@@ -583,7 +643,7 @@ ul {
 }
 
 .main__section.ads {
-  overflow: none;
+  overflow: initial;
 }
 
 .main__section--ads {
@@ -595,7 +655,12 @@ ul {
   height: 124px;
   width: 346px;
   border-radius: 20px;
+  cursor: pointer;
 }
+.main__section--ads div:hover {
+  box-shadow: 1px 1px 4px black;
+}
+
 .main__section--ads div:nth-of-type(1) {
   background: #eceaea;
 }
@@ -635,7 +700,7 @@ ul {
   bottom: 0;
   left: 0;
   transform: translateX(0);
-  width: 331px;
+  width: 85%;
 }
 
 .main__section--info ul {
@@ -645,19 +710,29 @@ ul {
 .main__section--info ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .main__section--info ul li a {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  color: #595858;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.main__section--info ul li a:nth-of-type(2) {
+.main__section--info ul li a:hover {
+  text-decoration: underline;
+}
+
+.main__section--info ul li span {
   color: #595858;
   position: relative;
+  font-size: 0.9rem;
+  text-align: left;
 }
-.main__section--info ul li:not(:nth-of-type(3)) a:nth-of-type(2)::after {
+.main__section--info ul li:not(:nth-of-type(3)) span::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -669,6 +744,8 @@ ul {
 
 .main__section--info ul li a div {
   margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
 }
 
 .main__section.info {
@@ -710,6 +787,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding-top: 215px;
+  align-items: flex-start;
 }
 
 .footer__logo {
@@ -748,6 +826,7 @@ ul {
 .footer__links ul li {
   color: white;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 0.4rem;
 }
 
 .footer__links ul li:nth-of-type(1) {
@@ -759,6 +838,10 @@ ul {
 .footer__links ul li a {
   color: white;
   font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+.footer__links ul li a:hover {
+  text-decoration: underline;
 }
 
 .footer__credits {
@@ -781,6 +864,11 @@ ul {
   font-weight: bolder;
   font-size: 1.1rem;
   color: white;
+  cursor: pointer;
+}
+
+.footer__credits p span span a:hover {
+  text-decoration: underline;
 }
 
 .footer__background {
