@@ -485,6 +485,7 @@ ul {
   width: 100%;
   height: 268px;
   overflow: hidden;
+  position: relative;
 }
 
 .main__section--box button {
@@ -499,6 +500,16 @@ ul {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.main__section--box div::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000061;
+  top: 0;
+  left: 0;
+  content: "";
 }
 
 .btn-primary.btn-green {
