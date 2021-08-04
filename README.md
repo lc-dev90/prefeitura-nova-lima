@@ -21,7 +21,7 @@ Estapa inicial do processo seletivo para empresa Webnets. Vaga de Desenvolvedor 
 
 ## Screenshots
 
-![]("preview.gif)
+![]("https://github.com/lc-dev90/prefeitura-nova-lima/blob/master/preview.gif?raw=true")
 
 ## Technologies
 
