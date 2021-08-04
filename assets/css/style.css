@@ -282,7 +282,7 @@ ul {
 }
 
 .main__section {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 .main__section--title {
@@ -310,6 +310,7 @@ ul {
 
 .main__section--services {
   padding-top: 3rem;
+  padding-bottom: 1rem;
   display: grid;
   gap: 1.1rem;
   column-gap: 1.5rem;
@@ -327,6 +328,12 @@ ul {
   border-radius: 10px;
   padding: 0.5rem 0;
   cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.main__section--button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 9px 1px #0000004d;
 }
 
 .main__section--button.darker {
