@@ -592,6 +592,11 @@ ul {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+.main__section--grid-gallery div:hover {
+  filter: brightness(1.15);
+  box-shadow: 1px 1px 6px 5px #0000005e;
 }
 
 .main__section--grid-gallery div img {
