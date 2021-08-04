@@ -66,48 +66,57 @@
       </div>
       <div class="header__main">
         <div class="container">
-          <div class="header__main--logo">
-            <img src="./assets/img/logo_header.png" alt="logo" />
+          <div class="flex-mobile">
+            <div class="header__main--logo">
+              <img src="./assets/img/logo_header.png" alt="logo" />
+            </div>
+            <h4 class="header__main--title">
+              Prefeitura Municipal de <span>Nova Lima</span>
+            </h4>
           </div>
-          <h4 class="header__main--title">
-            Prefeitura Municipal de <span>Nova Lima</span>
-          </h4>
-          <form class="header__main--form">
-            <label for="search-input">
-              <input
-                id="search-input"
-                type="text"
-                placeholder="Pesquise no site"
-              />
-              <button type="submit"><i class="fas fa-search"></i></button>
-            </label>
-          </form>
-          <div class="header__main--date">
-            <p><span>2</span> de <span>março</span> de <span>2021</span></p>
-          </div>
-          <div class="header__main--social">
-            <ul>
-              <li>
-                <a href="http://www.facebook.com" target="_blank" norefferer
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a href="http://www.twitter.com" target="_blank" norefferer
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="http://www.google.com" target="_blank" norefferer
-                  ><i class="fab fa-google"></i
-                ></a>
-              </li>
-              <li>
-                <a href="http://www.instagram.com" target="_blank" norefferer
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
+          <div class="flex">
+            <form class="header__main--form">
+              <label for="search-input">
+                <input
+                  id="search-input"
+                  type="text"
+                  placeholder="Pesquise no site"
+                />
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </label>
+            </form>
+            <div class="flex flex-direction-column">
+              <div class="header__main--date">
+                <p><span>2</span> de <span>março</span> de <span>2021</span></p>
+              </div>
+              <div class="header__main--social">
+                <ul>
+                  <li>
+                    <a href="http://www.facebook.com" target="_blank" norefferer
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="http://www.twitter.com" target="_blank" norefferer
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="http://www.google.com" target="_blank" norefferer
+                      ><i class="fab fa-google"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.instagram.com"
+                      target="_blank"
+                      norefferer
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -475,4 +484,9 @@
       </div>
     </footer>
   </body>
+  <script>
+    window.addEventListener("resize", (e) => {
+      console.log(window.innerWidth);
+    });
+  </script>
 </html>

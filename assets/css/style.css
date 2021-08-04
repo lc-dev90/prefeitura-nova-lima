@@ -155,6 +155,7 @@ ul {
   display: block;
   font-weight: 800;
 }
+
 .header__main--form {
   position: relative;
 }
@@ -274,7 +275,7 @@ ul {
 
 .header__navbar .container li a {
   color: #f8f8f8;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
 }
@@ -290,7 +291,7 @@ ul {
   object-fit: cover;
   object-position: center center;
   width: 100vw;
-  height: 500px;
+  height: 350px;
 }
 
 .main__section {
@@ -360,7 +361,7 @@ ul {
   font-family: "Monda", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  width: 50%;
+  width: 52%;
   text-align: left;
 }
 
@@ -368,7 +369,7 @@ ul {
   display: flex;
   padding-top: 1.5rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 4rem;
 }
 
@@ -376,6 +377,7 @@ ul {
   width: 355px;
   height: 445px;
   transition: all 250ms ease-in-out;
+  margin-bottom: 2rem;
 }
 
 .main__section--card:hover {
@@ -566,7 +568,7 @@ ul {
 
 .main__section--grid-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
@@ -649,6 +651,7 @@ ul {
 .main__section--ads {
   display: flex;
   justify-content: space-evenly;
+  margin-top: -40px;
 }
 
 .main__section--ads div {
@@ -764,7 +767,7 @@ ul {
 }
 
 .footer {
-  height: 333px;
+  height: 314px;
   display: flex;
   align-items: center;
   position: relative;
@@ -879,4 +882,108 @@ ul {
   background: #a52e26;
   z-index: -1;
   transform: skewY(-3deg) translateY(39px);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-mobile {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+/* Mobile */
+
+@media (max-width: 1120px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex .flex-direction-column {
+    flex-direction: row;
+  }
+
+  .header__main--form {
+    align-self: flex-end;
+    margin-bottom: 0.4rem;
+  }
+
+  .main__section--ads div {
+    width: 280px;
+  }
+}
+
+@media (max-width: 950px) {
+  .header__acessibility .container {
+    justify-content: center;
+  }
+  /* .header__navbar {
+    display: none;
+  } */
+
+  .header__accessibility--menu1 ul {
+    align-items: center;
+    justify-content: center;
+  }
+  .header__accessibility--menu2 {
+    display: none;
+  }
+
+  .main__section--tourism {
+    flex-direction: column;
+  }
+  .main__section--box {
+    width: 100%;
+  }
+
+  .main__section--ads {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__section--ads div {
+    width: 500px;
+    max-width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__section--card {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .main__section .container.info {
+    flex-direction: column;
+  }
+
+  .main__section--title.info::after {
+    width: 100%;
+  }
+  .footer {
+    height: 400px;
+  }
+
+  .footer__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .footer__links {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .footer__credits p {
+    text-align: center;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
