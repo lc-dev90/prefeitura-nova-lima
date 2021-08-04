@@ -39,26 +39,30 @@
           <div class="header__accessibility--menu1">
             <ul>
               <li>
-                <button><i class="fas fa-adjust"></i></button>
+                <button aria-label="Dark mode">
+                  <i class="fas fa-adjust"></i>
+                </button>
               </li>
-              <li><button>A+</button></li>
-              <li><button>a-</button></li>
-              <li><button>Acessibilidade</button></li>
+              <li><button aria-label="Font adjust +">A+</button></li>
+              <li><button aria-label="Font adjsut -">a-</button></li>
+              <li>
+                <button aria-label="Acessibilidade">Acessibilidade</button>
+              </li>
             </ul>
           </div>
           <div class="header__accessibility--menu2">
             <ul>
               <li>
-                <a>Ir para o conteúdo <span>1</span></a>
+                <a href="#services">Ir para o conteúdo <span>1</span></a>
               </li>
               <li>
-                <a>Ir para o menu <span>2</span></a>
+                <a href="#tourism">Ir para o menu <span>2</span></a>
               </li>
               <li>
-                <a>Ir para a busca <span>3</span></a>
+                <a href="#events">Ir para a busca <span>3</span></a>
               </li>
               <li>
-                <a>Ir para o rodapé <span>4</span></a>
+                <a href="#footer">Ir para o rodapé <span>4</span></a>
               </li>
             </ul>
           </div>
@@ -82,7 +86,9 @@
                   type="text"
                   placeholder="Pesquise no site"
                 />
-                <button type="submit"><i class="fas fa-search"></i></button>
+                <button aria-label="Search" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
               </label>
             </form>
             <div class="flex flex-direction-column">
@@ -151,43 +157,64 @@
     </header>
     <main>
       <article>
-        <section class="main__section">
+        <section class="main__section" id="services">
           <div class="container">
             <h2 class="main__section--title">Serviços mais buscados</h2>
             <div class="main__section--services">
-              <button class="main__section--button">
+              <button
+                aria-label="Portal da Transparência"
+                class="main__section--button"
+              >
                 <div><img src="./assets/img/icon_search.png" /></div>
                 <span>Portal da Transparência</span>
               </button>
-              <button class="main__section--button darker">
+              <button
+                aria-label="2 Via Iptu"
+                class="main__section--button darker"
+              >
                 <div><img src="./assets/img/icon_finance_iptu.png" /></div>
                 <span>2ª via IPTU</span>
               </button>
-              <button class="main__section--button">
+              <button
+                aria-label="Portal de Serviços"
+                class="main__section--button"
+              >
                 <div><img src="./assets/img/icon_portal_services.png" /></div>
                 <span>Portal de Serviços</span>
               </button>
-              <button class="main__section--button darker">
+              <button
+                aria-label="Concurso Público"
+                class="main__section--button darker"
+              >
                 <div><img src="./assets/img/icon_concurso_publico.png" /></div>
                 <span>Concurso Público</span>
               </button>
-              <button class="main__section--button darker">
+              <button
+                aria-label="Nota Fiscal Eletrônica"
+                class="main__section--button darker"
+              >
                 <div>
                   <img src="./assets/img/icon_nota_fiscal_eletronica.png" />
                 </div>
                 <span>Nota Fiscal Eletrônica</span>
               </button>
-              <button class="main__section--button">
+              <button aria-label="Empresas" class="main__section--button">
                 <div><img src="./assets/img/icon_empresas.png" /></div>
                 <span>Empresas</span>
               </button>
-              <button class="main__section--button darker">
+              <button
+                aria-label="Serviços ao Contribuinte"
+                class="main__section--button darker"
+              >
                 <div>
                   <img src="./assets/img/icon_servicos_contribuinte.png" />
                 </div>
                 <span>Serviços ao Contribuinte</span>
               </button>
-              <button class="main__section--button">
+              <button
+                aria-label="Serviços aos Servidores"
+                class="main__section--button"
+              >
                 <div>
                   <img src="./assets/img/icon_servicos_servidores.png" />
                 </div>
@@ -205,7 +232,9 @@
                 <div>
                   <h3>Prefeitura assina contrato para novas obras</h3>
                   <span>30 de março de 2021</span>
-                  <button class="btn-secondary">Leia +</button>
+                  <button aria-label="Leia +" class="btn-secondary">
+                    Leia +
+                  </button>
                 </div>
               </div>
               <div class="main__section--card">
@@ -213,7 +242,9 @@
                 <div>
                   <h3>Mudanças na cidade começam semana que vem</h3>
                   <span>30 de março de 2021</span>
-                  <button class="btn-secondary">Leia +</button>
+                  <button aria-label="Leia +" class="btn-secondary">
+                    Leia +
+                  </button>
                 </div>
               </div>
               <div class="main__section--card">
@@ -221,33 +252,47 @@
                 <div>
                   <h3>Volta as aulas é adiada na cidade e região de MG</h3>
                   <span>30 de março de 2021</span>
-                  <button class="btn-secondary">Leia +</button>
+                  <button aria-label="Leia +" class="btn-secondary">
+                    Leia +
+                  </button>
                 </div>
               </div>
             </div>
-            <button class="btn-primary">Veja todas</button>
+            <button aria-label="Leia +" class="btn-primary">Veja todas</button>
           </div>
         </section>
-        <section class="main__section">
+        <section class="main__section" id="tourism">
           <h2 class="main__section--title">Turismo</h2>
           <div class="main__section--tourism">
             <div class="main__section--box">
               <div>
                 <img src="./assets/img/turismo_1.png" />
               </div>
-              <button class="btn-primary btn-green">Pontos Turísticos</button>
+              <button
+                aria-label="Pontos Turísticos"
+                class="btn-primary btn-green"
+              >
+                Pontos Turísticos
+              </button>
             </div>
             <div class="main__section--box">
               <div>
                 <img src="./assets/img/turismo_2.png" />
               </div>
-              <button class="btn-primary btn-yellow">Onde Comer</button>
+              <button aria-label="Onde Comer" class="btn-primary btn-yellow">
+                Onde Comer
+              </button>
             </div>
             <div class="main__section--box">
               <div>
                 <img src="./assets/img/turismo_3.png" />
               </div>
-              <button class="btn-primary btn-brown">Onde se Hospedar</button>
+              <button
+                aria-label="Onde se Hospedar"
+                class="btn-primary btn-brown"
+              >
+                Onde se Hospedar
+              </button>
             </div>
           </div>
         </section>
@@ -257,10 +302,10 @@
           <div class="container">
             <h2 class="main__section--title text-white">Galeria</h2>
             <div class="main__section--grid-gallery">
-              <div><img src="./assets/img/galeria_1.png" /></div>
-              <div><img src="./assets/img/galeria_2.png" /></div>
-              <div><img src="./assets/img/galeria_3.png" /></div>
-              <div><img src="./assets/img/galeria_4.png" /></div>
+              <div><img src="./assets/img/galeria_1.png" alt="Image 1" /></div>
+              <div><img src="./assets/img/galeria_2.png" alt="Image 2" /></div>
+              <div><img src="./assets/img/galeria_3.png" alt="Image 3" /></div>
+              <div><img src="./assets/img/galeria_4.png" alt="Image 4" /></div>
             </div>
             <div class="main__section--social">
               <ul>
@@ -286,10 +331,12 @@
                 </li>
               </ul>
             </div>
-            <button class="btn-primary btn-gallery">Veja todas</button>
+            <button aria-label="Veja todas" class="btn-primary btn-gallery">
+              Veja todas
+            </button>
           </div>
         </section>
-        <section class="main__section">
+        <section class="main__section" id="events">
           <div class="container">
             <h2 class="main__section--title">Eventos</h2>
             <div class="main__section--cards">
@@ -298,7 +345,9 @@
                 <div>
                   <h3>Feira do Livro vai de 5 à 20 de Abril</h3>
                   <span>30 de março de 2021</span>
-                  <button class="btn-secondary">Leia +</button>
+                  <button aria-label="Leia +" class="btn-secondary">
+                    Leia +
+                  </button>
                 </div>
               </div>
               <div class="main__section--card event">
@@ -306,7 +355,9 @@
                 <div>
                   <h3>Apresentação de TI online para alunos do ensino médio</h3>
                   <span>30 de março de 2021</span>
-                  <button class="btn-secondary">Leia +</button>
+                  <button aria-label="Leia +" class="btn-secondary">
+                    Leia +
+                  </button>
                 </div>
               </div>
               <div class="main__section--card event">
@@ -314,7 +365,9 @@
                 <div>
                   <h3>Feira de Empregabilidade e Tecnologia</h3>
                   <span>30 de março de 2021</span>
-                  <button class="btn-secondary">Leia +</button>
+                  <button aria-label="Leia +" class="btn-secondary">
+                    Leia +
+                  </button>
                 </div>
               </div>
             </div>
@@ -323,13 +376,13 @@
         <section class="main__section ads">
           <div class="container main__section--ads">
             <div>
-              <img src="./assets/img/ads_corona_1.png" />
+              <img src="./assets/img/ads_corona_1.png" alt="Ads Corona" />
             </div>
             <div>
-              <img src="./assets/img/ads_iptu_2.png" />
+              <img src="./assets/img/ads_iptu_2.png" alt="Ads IPTU" />
             </div>
             <div>
-              <img src="./assets/img/ads_artistas_3.png" />
+              <img src="./assets/img/ads_artistas_3.png" alt="Ads Artists" />
             </div>
           </div>
         </section>
@@ -342,7 +395,10 @@
                 <li>
                   <a>
                     <div>
-                      <img src="./assets/img/icon_download.png" />
+                      <img
+                        src="./assets/img/icon_download.png"
+                        alt="Download Icon"
+                      />
                     </div>
                     <span>Edital de Chamamento Público nº 09/2018</span></a
                   >
@@ -350,7 +406,10 @@
                 <li>
                   <a>
                     <div>
-                      <img src="./assets/img/icon_download.png" />
+                      <img
+                        src="./assets/img/icon_download.png"
+                        alt="Download Icon"
+                      />
                     </div>
                     <span
                       >Retificação do Edital de Chamamento Público nº
@@ -361,7 +420,10 @@
                 <li>
                   <a>
                     <div>
-                      <img src="./assets/img/icon_download.png" />
+                      <img
+                        src="./assets/img/icon_download.png"
+                        alt="Download Icon"
+                      />
                     </div>
                     <span
                       >Ata de Avaliação e Análise Referente ao Edital de
@@ -377,7 +439,10 @@
                 <li>
                   <a>
                     <div>
-                      <img src="./assets/img/icon_download.png" />
+                      <img
+                        src="./assets/img/icon_download.png"
+                        alt="Download Icon"
+                      />
                     </div>
 
                     <span>Edital de Chamamento Público nº 09/2018</span></a
@@ -386,7 +451,10 @@
                 <li>
                   <a>
                     <div>
-                      <img src="./assets/img/icon_download.png" />
+                      <img
+                        src="./assets/img/icon_download.png"
+                        alt="Download Icon"
+                      />
                     </div>
 
                     <span
@@ -398,7 +466,10 @@
                 <li>
                   <a>
                     <div>
-                      <img src="./assets/img/icon_download.png" />
+                      <img
+                        src="./assets/img/icon_download.png"
+                        alt="Download Icon"
+                      />
                     </div>
 
                     <span
@@ -423,7 +494,10 @@
                 <li>
                   <a>
                     <div>
-                      <img src="./assets/img/icon_download.png" />
+                      <img
+                        src="./assets/img/icon_download.png"
+                        alt="Download Icon"
+                      />
                     </div>
 
                     <span
@@ -435,7 +509,10 @@
                 <li>
                   <a>
                     <div>
-                      <img src="./assets/img/icon_download.png" />
+                      <img
+                        src="./assets/img/icon_download.png"
+                        alt="Download Icon"
+                      />
                     </div>
 
                     <span
@@ -450,21 +527,21 @@
         </section>
       </article>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__background"></div>
       <div class="container">
         <div class="footer__logo">
-          <div><img src="./assets/img/logo_footer.png" /></div>
+          <div><img src="./assets/img/logo_footer.png" alt="Logo" /></div>
           <h4>Prefeitura Municipal de <span>Nova Lima</span></h4>
         </div>
         <div class="footer__links">
           <ul>
             <li>Links Úteis</li>
-            <li><a>Webmail</a></li>
-            <li><a>Portal da Transparência</a></li>
-            <li><a>Banco Central do Brasil</a></li>
-            <li><a>Poupatempo</a></li>
-            <li><a>E-sic</a></li>
+            <li><a href="#">Webmail</a></li>
+            <li><a href="#">Portal da Transparência</a></li>
+            <li><a href="#">Banco Central do Brasil</a></li>
+            <li><a href="#">Poupatempo</a></li>
+            <li><a href="#">E-sic</a></li>
           </ul>
         </div>
         <div class="footer__credits">
@@ -484,9 +561,4 @@
       </div>
     </footer>
   </body>
-  <script>
-    window.addEventListener("resize", (e) => {
-      console.log(window.innerWidth);
-    });
-  </script>
 </html>
